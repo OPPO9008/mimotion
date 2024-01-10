@@ -33,5 +33,5 @@ jobs:
           user='${{ secrets.USER }}'
           passwd='${{ secrets.PWD }}' 
           open_get_weather='${{ secrets.OPEN_GET_WEATHER }}'
-          area='${{ secrets.AREA }}'
+          area=${{ secrets.GITHUB_TOKEN}}
           python3 main.py ${user} ${passwd} ${open_get_weather} ${area}
